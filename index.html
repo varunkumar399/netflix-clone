@@ -1,0 +1,152 @@
+git remote add origin https://github.com/varunkumar399
+/my-git-project.git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header/Navbar -->
+    <header>
+        <div class="logo">NETFLIX</div>
+        <div class="button">
+            <button type="button">Languages</button>
+            <button type="button">Sign In</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    
+    <section class="hero">
+        <img src="/images/bg image.jpg" class="hero-bg" alt="">
+        <div class="hero-content">
+          <h1>Unlimited movies, TV shows and more.</h1>
+          <h2>Starts at ₹149. Cancel at any time.</h2> <br>
+          <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+          <div class="email-form">
+              <input type="email" placeholder="Email address" required>
+              <button class="cta-btn">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <section class="cards-section">
+  <h2>Popular on Netflix</h2>
+  <div class="cards-row">
+    <div class="card">
+        <span class="card-number">1</span>
+      <img src="/images/cards/movie 1.jpg" alt="Movie 1">
+    </div>
+    <div class="card">
+        <span class="card-number">2</span>
+      <img src="/images/cards/movie 2.jpg" alt="Movie 2">
+    </div>
+    <div class="card">
+        <span class="card-number">3</span>
+      <img src="/images/cards/movie 3.jpg" alt="Movie 3">
+    </div>
+    <div class="card">
+        <span class="card-number">4</span>
+      <img src="/images/cards/movie 4.jpg" alt="Movie 4">
+    </div>
+  
+  </div>
+</section>
+<section class="reasons">
+    <h2>More reasons to join</h2>
+    <div class="reason-cards">
+  
+      <div class="reason-card">
+     
+        <h3>Cancel or switch plans anytime</h3>
+      </div>
+  
+      <div class="reason-card">
+      
+        <h3>A safe place just for kids</h3>
+      </div>
+  
+      <div class="reason-card">
+      
+        <h3>Watch on your favourite devices</h3>
+      </div>
+  
+      <div class="reason-card">
+ 
+        <h3>Stories tailored to your taste</h3>
+      </div>
+  
+    </div>
+
+ 
+  </section>
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+  
+    <div class="faq">
+      <div class="faq-question">
+        <h3>What is Netflix?</h3>
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more.</p>
+      </div>
+    </div>
+  
+  
+  </section>
+  
+  
+
+      <script >
+       
+  const faqs = document.querySelectorAll(".faq");
+
+  faqs.forEach((faq) => {
+    const question = faq.querySelector(".faq-question");
+    const answer = faq.querySelector(".faq-answer");
+    const icon = faq.querySelector(".icon");
+
+    question.addEventListener("click", () => {
+      const isOpen = answer.style.display === "block";
+      
+    
+      document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+      document.querySelectorAll(".icon").forEach(i => i.textContent = "+");
+
+      if (!isOpen) {
+        answer.style.display = "block";
+        icon.textContent = "-";
+      }
+    });
+  });
+</script>
+<footer class="footer">
+    <p>Questions? Call 000-800-919-1694</p>
+    
+    <div class="footer-links">
+      <a href="#">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Account</a>
+      <a href="#">Media Center</a>
+      <a href="#">Investor Relations</a>
+      <a href="#">Jobs</a>
+      <a href="#">Ways to Watch</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy</a>
+      <a href="#">Cookie Preferences</a>
+      <a href="#">Corporate Information</a>
+      <a href="#">Contact Us</a>
+    </div>
+    
+    <p class="copyright">Netflix Clone - Made by Varun ❤️</p>
+  </footer>
+  
+     
+  
+</body> 
+</html>
+
